@@ -235,6 +235,56 @@ font-weight: 700;
 
 
 /* freture_2 style end here  */
+/* info style start here  */
+
+.info{
+    width: 80%;
+    margin: 40px auto;
+}
+.info_head{
+    max-width: 35%;
+    margin: 60px 0px;
+}
+.info_h1{
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+}
+.info_p{
+    color: rgb(114, 114, 114);
+font-family: Work Sans;
+font-size: .9rem;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+.info_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+
+}
+.info_item{
+    
+    margin: 0px 20px; 
+    padding: 20px 10px;
+    box-sizing: border-box;
+border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+/* width: 100%; */
+
+}
+.info_img , .info_h2 , .info_p2{
+  margin-bottom: 10px;
+}
+.info_p2{
+    color: rgb(114, 114, 114);
+    padding-bottom: 10px;
+}
+
+
+/* info style end here  */
 /* main style end here  */
 
 
@@ -344,7 +394,23 @@ font-weight: 700;
         left: 77px;
         bottom: -28px;
     }
+    .info_content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
     
+    .info_head {
+        max-width: 90%;
+        text-align: center;
+    }
+    
+    p.info_p {
+        text-align: center;
+    }
+    
+    .info_item {
+        width: none;
+    }
     
 }
 
@@ -442,9 +508,7 @@ font-weight: 700;
     
     nav.nav_container {}
     
-    .main_head {
-        /* width: 95%; */
-    }
+   
     
     section.feture {
         width: 95%;
@@ -459,6 +523,7 @@ font-weight: 700;
     .carrier_content.c_c_1 {
         width: 70%;
         margin: 10px auto;
+        grid-area: a;
     }
     
    
@@ -466,6 +531,36 @@ font-weight: 700;
     .carrier_content {
         width: 70%;
         margin: 10px auto;
+        grid-area: b;
+    }
+    .carrier_item_1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .carrier_content {
+        width: 40%;
+    }
+
+    .info_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .info_head {
+        max-width: 70%;
+        margin: 70px auto;
+    }
+    
+    p.info_p {
+        text-align: center;
+    }
+    
+    h1.info_h1 {
+        text-align: center;
     }
 }
 /*  responsive end here  */
