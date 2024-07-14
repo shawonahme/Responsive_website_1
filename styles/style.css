@@ -11,7 +11,8 @@ body{
 #hero{
 
     background: rgba(255, 144, 14, 0.1);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 .nav_container{
     width: 80%;
@@ -76,7 +77,72 @@ body{
 .main_img img{
     width: 100%;
 }
-/* header style responsive start here  */
+/* header style end here  */
+/* main style start here  */
+/* freture style start here  */
+
+.feture{
+   width: 80%;
+   margin: 80px auto;
+}
+.freture_continar{
+    display: flex;
+  /* flex-wrap: wrap; */
+  justify-content:center;
+
+  
+}
+.freture_img{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 5px;
+    width: 55%;
+
+    
+}
+.freture_img img{
+   width: 95%;
+}
+
+/* .freture_img{
+    flex-basis: 1;
+} */
+/* freture style end here  */
+
+.freture_content{
+    max-width: 40%;
+    margin: 10% auto;
+    
+}
+.freture_h1,.freture_p{
+    padding: 20px 40px;
+}
+.freture_h1{
+    max-width: 300px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+}
+.freture_p{
+    color: rgb(114, 114, 114);
+font-family: Work Sans;
+font-size: .7rem;
+font-weight: 400;
+line-height: 26px;
+
+}
+.f_s_1{
+    color: gray;
+}
+.f_s_2{
+    color: black;
+}
+.f_s_3{
+    color: rgb(255, 144, 14);
+}
+
+
+/* main style end here  */
+/*  responsive start here  */
 @media screen and (max-width: 576px) {
     nav.nav_container {
         flex-direction: column;
@@ -111,11 +177,49 @@ body{
       
         height: 100vh;
     }
+    section.feture {
+        width: 100%;
+    }
+    
+    .freture_continar {
+        flex-direction: column;
+    }
+    .freture_img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    
+    }    
+    .freture_content {
+      width: 100%;
+        margin: 10% auto;
+        text-align: center;
+    }
+    .freture_content {
+        max-width: 100%;
+    }
+    h1.freture_h1 {
+        max-width: none;
+    }
+    .freture_img {
+        width: 100%;
+    }
+  
+    
+    .freture_continar {
+        flex-direction: column-reverse;
+    }
+    header#hero {
+        height: 100%;
+    }
 }
 @media screen and (min-width: 575px) and (max-width: 992px){
     nav.nav_container {
         width: 100%;
         /* margin: 0px 2px; */
+    }
+    header#hero {
+        height: 100%;
     }
     
     .main_head {
@@ -133,6 +237,26 @@ body{
     header#hero {
         height: 100vh;
     }
+    section.feture {
+        width: 100%;
+    }
+    
+    .freture_continar {
+        flex-direction: column-reverse;
+    }
+    
+    .freture_img {
+        width: 100%;
+    }
+    
+    .freture_content {
+        margin: 40px auto;
+        max-width: 80%;
+        text-align: center;
+    }
+    
+    h1.freture_h1 {
+        max-width: none;
+    }
 }
-/* header style responsive end here  */
-/* header style end here  */
+/*  responsive end here  */
