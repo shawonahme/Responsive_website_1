@@ -7,3 +7,132 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
+/* header style start here  */
+#hero{
+
+    background: rgba(255, 144, 14, 0.1);
+    height: 100vh;
+}
+.nav_container{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    /* border: 1px solid tomato; */
+   
+}
+.nav_item{
+    margin: 0px 40px;
+    text-transform: capitalize;
+}
+.nav_Link{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+    cursor: pointer;
+}
+.main_head{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+.main_h1{
+
+    margin: 20px 30%;
+}
+.main_p{
+   
+    margin: 20px 25%;
+    font-size: .7rem;
+    line-height: 1.2rem;
+    color: rgb(114, 114, 114);
+    
+}
+.btn{
+    padding: 30px;
+    display: block;
+}
+.btn a{
+ color: white;
+ border-radius: 8px;
+
+ background: rgb(255, 144, 14);
+ text-decoration: none;
+ padding: 20px 40px;
+
+}
+.main_img{
+  width: 100%;
+  height: 50%;
+  margin-top: 40px;
+}
+.main_img img{
+    width: 100%;
+}
+/* header style responsive start here  */
+@media screen and (max-width: 576px) {
+    nav.nav_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul.navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    li.nav_item {
+        padding-top: 20px;
+    }
+    h1.main_h1 {
+        margin: 20px 2%;
+    }
+    
+    p.main_p {
+        margin: 20px 2%;
+    }
+    
+    nav.nav_container {
+        width: 100%;
+    }
+    
+    .main_head {
+        width: 100%;
+    }
+    #hero{
+
+      
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 575px) and (max-width: 992px){
+    nav.nav_container {
+        width: 100%;
+        /* margin: 0px 2px; */
+    }
+    
+    .main_head {
+        width: 100%;
+    }
+    
+    h1.main_h1 {
+        margin: 20px 20%;
+    }
+    
+    p.main_p {
+        margin: 20px 20%;
+    }
+    
+    header#hero {
+        height: 100vh;
+    }
+}
+/* header style responsive end here  */
+/* header style end here  */
